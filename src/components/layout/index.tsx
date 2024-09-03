@@ -2,8 +2,9 @@ import styled from "@emotion/styled";
 import { useRouter } from "next/router";
 import LayoutHeader from "./Header/LayoutHeader";
 import LayoutNav from "./NavMenu/LayoutNav";
-import LayoutBanner from "./Banner";
-import FullMenu from "./FullMenu/FullMenu";
+import LayoutBanner from "./Banner/LayoutBanner";
+import FullMenu from "./FullMenu/fullMenu";
+import LayoutFooter from "./Footer/LayoutFooter";
 
 interface ILayoutProps {
   children: JSX.Element;
@@ -31,6 +32,7 @@ export default function Layout(props: ILayoutProps): JSX.Element {
       {isHidden && <LayoutBanner />}
       {isHidden && <FullMenu />}
       <LayoutMain>{props.children}</LayoutMain>
+      {isHidden && <LayoutFooter />}
     </>
   );
 }
