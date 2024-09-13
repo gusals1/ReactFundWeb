@@ -1,5 +1,5 @@
 import { globalStyles } from "@/src/commons/styles/globalStyles";
-import Layout from "../src/components/layout/index";
+import Layout from "../src/components/commons/layout/index";
 import { Global } from "@emotion/react";
 import type { AppProps } from "next/app";
 

@@ -1,0 +1,58 @@
+export const listData = [
+  {
+    id: 1,
+    name: "농업회사법인(주) 청해",
+    content: "[최초공개]150세트 한정, 청년이 빚은 청춘 막걸리! '청춘 7도'",
+    price: 2286000,
+    image: "/mainImage/object_01.jpg",
+  },
+  {
+    id: 2,
+    name: "농업회사법인(주)좋은술",
+    content: "[150병 한정!] 한국 최초 '볶은 보리/메밀'로 만든 소주!",
+    price: 1117500,
+    image: "/mainImage/object_02.png",
+  },
+  {
+    id: 3,
+    name: "디앤비인터내셔널(주)",
+    content: "가격은 낮추고 품질은 높이다! 블루투스 스피커 가성비 완결판[HR-T]",
+    price: 55103000,
+    image: "/mainImage/object_03.png",
+  },
+  {
+    id: 4,
+    name: "(주)유메이드",
+    content: "[글로벌 36억 펀딩] 듀얼&트리플 노트북 모니터 TRIO",
+    price: 57324000,
+    image: "/mainImage/object_04.png",
+  },
+  {
+    id: 5,
+    name: "(주)정글",
+    content: "[최초공개] 당신의 스포츠에 비트를 입히다! Zungle Viper",
+    price: 43196800,
+    image: "/mainImage/object_05.png",
+  },
+  {
+    id: 6,
+    name: "태남디비아이(주)",
+    content: "[글로벌 30억]400만 파워 유튜버와 노매틱이 만든 역대급 카메라팩",
+    price: 34848000,
+    image: "/mainImage/object_06.png",
+  },
+  {
+    id: 7,
+    name: "(주)유메이드",
+    content: "글로벌150억펀딩 무선이어폰 [Pamu Slide Mini]",
+    price: 26687000,
+    image: "/mainImage/object_07.png",
+  },
+  {
+    id: 8,
+    name: "Pivo",
+    content: "세계에서 인정받은 사진영상 촬영 스마트팟 '피보(Pivo)'",
+    price: 60376000,
+    image: "/mainImage/object_08.png",
+  },
+];
