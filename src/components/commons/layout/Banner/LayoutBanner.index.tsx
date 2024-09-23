@@ -14,6 +14,7 @@ export default function LayoutBanner() {
         alt="배너이미지"
         width={1200}
         height={440}
+        priority
       />
     </Wrapper>
   );

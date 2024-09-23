@@ -55,4 +55,27 @@ export const listData = [
     price: 60376000,
     image: "/mainImage/object_08.png",
   },
+  {
+    id: 9,
+    name: "(주)쉔코리아",
+    content:
+      "2만원대 에어컨 선풍기는 처음이시죠? 여러분의 여름을 책임져드립니다.",
+    price: 60376000,
+    image: "/mainImage/object_09.png",
+  },
+  {
+    id: 10,
+    name: "(주)엠지스토리",
+    content: "[글로벌펀딩 46억 / 샤오미 로이드미]미로 초고속 헤어드라이기",
+    price: 60376000,
+    image: "/mainImage/object_10.png",
+  },
+  {
+    id: 11,
+    name: "마이클앤선솔루션(주)",
+    content:
+      "[가정의달 기념]신규 폰트와 이모티콘으로 네임스티커 무한제작! 마로마로",
+    price: 60376000,
+    image: "/mainImage/object_11.png",
+  },
 ];

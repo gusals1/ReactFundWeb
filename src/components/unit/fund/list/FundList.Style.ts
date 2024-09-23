@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
+import Image from "next/image";
 
 export const Wrapper = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 95px;
+  width: 100%;
 `;
 
 export const WrapItem = styled.div`
-  width: 100%;
-  margin: 90px 0;
+  max-width: 1200px;
+  margin: 90px auto;
+  padding: 0 95px;
 `;
 
 export const WrapTitle = styled.div`
@@ -44,4 +44,22 @@ export const ProdWrapHalf = styled.div`
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
+`;
+
+export const SubBanner = styled.div`
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto 90px;
+  position: relative;
+  aspect-ratio: 1200 / 160;
+`;
+export const ImageWrap = styled.div`
+  width: 100%;
+  height: auto;
+  position: relative;
+  aspect-ratio: 1010 / 400;
+`;
+
+export const StyledImage = styled(Image)`
+  object-fit: contain;
 `;

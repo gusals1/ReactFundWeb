@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Image from "next/image";
 import Link from "next/link";
 
 export const Wrapper = styled.div`
@@ -9,9 +10,14 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: flex-end;
 `;
-export const MainLogo = styled.h1`
+export const LogoWrap = styled.h1`
   width: 14%;
   position: relative;
+  aspect-ratio: 130/68;
+  cursor: pointer;
+`;
+export const StyledImage = styled(Image)`
+  object-fit: contain;
 `;
 
 export const Navigation = styled.nav`
@@ -59,6 +65,7 @@ export const MenuToggle = styled.div`
   cursor: pointer;
   margin-bottom: 5px;
   position: relative;
+  aspect-ratio: 32/32;
 `;
 
 export const DropDownBox = styled.nav`

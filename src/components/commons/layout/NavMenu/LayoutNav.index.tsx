@@ -1,13 +1,11 @@
-import Image from "next/image";
 import * as S from "./LayoutNav.style";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 export default function LayoutNav() {
   const toggleImage = ["/navImage/hamburger.png", "/navImage/close.png"];
 
   const [dropDownState, setDropDownState] = useState(false);
   const [imageSrc, setImageSrc] = useState("/navImage/hamburger.png");
-  // const dropDownRef = useRef<HTMLDivElement>(null);
 
   const dropDown = () => {
     setDropDownState((prev) => !prev);
@@ -17,16 +15,9 @@ export default function LayoutNav() {
 
   return (
     <S.Wrapper>
-      <S.MainLogo>
-        <Image
-          src={"/mainlogo.png"}
-          alt="mainlogo"
-          width={168}
-          height={88}
-          style={{ objectFit: "contain", width: "100%", height: "auto" }}
-          priority
-        />
-      </S.MainLogo>
+      <S.LogoWrap>
+        <S.StyledImage src={"/mainlogo.png"} alt="mainlogo" fill priority />
+      </S.LogoWrap>
       <S.Navigation>
         <S.NavUl>
           <S.NavLi>
@@ -44,14 +35,7 @@ export default function LayoutNav() {
         </S.NavUl>
       </S.Navigation>
       <S.MenuToggle>
-        <Image
-          src={imageSrc}
-          alt="hamburgerMenu"
-          style={{ objectFit: "contain" }}
-          width={32}
-          height={32}
-          onClick={dropDown}
-        />
+        <S.StyledImage src={imageSrc} alt="버튼" onClick={dropDown} fill />
 
         <S.DropDownBox className={dropDownState ? "open" : ""}>
           <S.Submenu>커넥터소개</S.Submenu>

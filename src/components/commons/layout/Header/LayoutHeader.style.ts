@@ -55,6 +55,7 @@ export const HeaderMenu = styled.ul`
 `;
 export const HeaderNav = styled.li`
   color: #4c4c4d;
+  cursor: pointer;
   &:last-child {
     background: #85dfff;
     padding: 8px 6px;
