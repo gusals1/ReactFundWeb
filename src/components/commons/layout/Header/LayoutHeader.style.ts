@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Link from "next/link";
 
 export const Wrapper = styled.div`
   max-width: 1200px;
@@ -53,7 +54,8 @@ export const HeaderMenu = styled.ul`
   justify-content: space-between;
   align-items: center;
 `;
-export const HeaderNav = styled.li`
+
+export const HeaderNav = styled(Link)`
   color: #4c4c4d;
   cursor: pointer;
   &:last-child {

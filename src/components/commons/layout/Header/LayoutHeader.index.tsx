@@ -10,9 +10,9 @@ export default function LayoutHeader() {
         </S.SearchBar>
 
         <S.HeaderMenu>
-          <S.HeaderNav>LOGIN</S.HeaderNav>
-          <S.HeaderNav>CONNECT US</S.HeaderNav>
-          <S.HeaderNav>프로젝트 생성</S.HeaderNav>
+          <S.HeaderNav href={"/login"}>LOGIN</S.HeaderNav>
+          <S.HeaderNav href={"/join"}>CONNECT US</S.HeaderNav>
+          <S.HeaderNav href={"#"}>프로젝트 생성</S.HeaderNav>
         </S.HeaderMenu>
       </S.HeaderInner>
     </S.Wrapper>
