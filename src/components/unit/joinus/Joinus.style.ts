@@ -1,12 +1,6 @@
-import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { Button, Form, Input } from "antd";
 import Image from "next/image";
-
-const InputStyled = css`
-  width: 100%;
-  height: 45px;
-`;
 
 export const Wrapper = styled.div`
   max-width: 500px;
@@ -33,10 +27,12 @@ export const SignUpForm = styled(Form)`
 `;
 
 export const InputId = styled(Input)`
-  ${InputStyled}
+  width: 100%;
+  height: 45px;
 `;
 export const InputPassword = styled(Input.Password)`
-  ${InputStyled}
+  width: 100%;
+  height: 45px;
 `;
 
 export const StyledFormItem = styled(Form.Item)`
@@ -51,12 +47,8 @@ export const DateWrap = styled.div`
   gap: 10px;
 `;
 
-export const FormItemWrapper = styled(Form.Item)`
+export const DateInfo = styled(Form.Item)`
   flex: 1;
-`;
-
-export const FormBtn = styled(Button)`
-  height: 45px;
 `;
 
 export const SubmitBtn = styled(Button)`

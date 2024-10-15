@@ -49,7 +49,7 @@ export default function LayoutFooter() {
           <S.InfoText>
             과도한 빚은 당신에게 큰 불행을 안겨줄 수 있습니다.
           </S.InfoText>
-          <S.InfoText>Copyright © CONNECT 2023. All Right Reserved.</S.InfoText>
+          <S.InfoText>Copyright © CONNECT 2024. All Right Reserved.</S.InfoText>
         </div>
         <S.IconWrap>
           <Image

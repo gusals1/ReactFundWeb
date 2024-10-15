@@ -14,7 +14,12 @@ export default function ProdMiddle({ el, ...props }: IProdSmallProps) {
   return (
     <S.Wrap>
       <S.ProdImage>
-        <S.StyledImage src={el.image} alt={"asdas"} fill />
+        <S.StyledImage
+          src={el.image}
+          alt={`${el.id}번 이미지`}
+          fill
+          sizes="(max-width:1200px) 100%"
+        />
       </S.ProdImage>
 
       <S.ProdName>{el.name}</S.ProdName>

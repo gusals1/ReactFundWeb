@@ -74,7 +74,7 @@ export const StyledLink = styled(Link)`
     width: 1px;
     height: 100%;
   }
-  &:last-child::after {
+  &:last-of-type::after {
     display: none;
   }
   :hover {

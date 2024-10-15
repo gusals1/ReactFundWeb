@@ -16,7 +16,12 @@ export default function LayoutNav() {
   return (
     <S.Wrapper>
       <S.LogoWrap>
-        <S.StyledImage src={"/mainlogo.png"} alt="mainlogo" fill priority />
+        <S.StyledImage
+          src={"/mainlogo.png"}
+          alt="mainlogo"
+          fill
+          sizes="(max-width:1200px) 100%"
+        />
       </S.LogoWrap>
       <S.Navigation>
         <S.NavUl>
@@ -35,7 +40,13 @@ export default function LayoutNav() {
         </S.NavUl>
       </S.Navigation>
       <S.MenuToggle>
-        <S.StyledImage src={imageSrc} alt="버튼" onClick={dropDown} fill />
+        <S.StyledImage
+          src={imageSrc}
+          alt="버튼"
+          onClick={dropDown}
+          fill
+          sizes="(max-width:1200px) 100%"
+        />
 
         <S.DropDownBox className={dropDownState ? "open" : ""}>
           <S.Submenu>커넥터소개</S.Submenu>

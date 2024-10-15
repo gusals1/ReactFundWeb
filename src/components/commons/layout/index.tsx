@@ -15,23 +15,26 @@ export default function Layout(props: ILayoutProps): JSX.Element {
   const LayoutMain = styled.div`
     margin: auto;
   `;
-  // 로그인 회원가입 페이지에서는 메인만 보여주기 때문에 경로에 따라 안보이게 변경해줌
-  let isHidden = true;
-  const isHiddenLogin = router.asPath.includes("/login");
-  const isHiddenSignup = router.asPath.includes("/join");
 
-  if (isHiddenLogin || isHiddenSignup) {
-    isHidden = false;
-  }
+  // true면 안보이게 false면 보이게하기
+  // join이거나 login이면 true임
+  const isHidden =
+    router.asPath.includes("/login") || router.asPath.includes("/join");
+  // new 이면 true임
+  const isHiddenNew = router.asPath.includes("/new");
+
+  // 내가 원하는 조건은 fullMenu와 Banner는 생성 페이지에서는 안보이게 하려고 함.
+  // 그럼 조건이 isHidden과 isHidden중에 하나라도 false면 안보여야함.
+  // 다른건 isHidden에만 구애받으면 됨.
 
   return (
     <>
-      {isHidden && <LayoutHeader />}
-      {isHidden && <LayoutNav />}
-      {isHidden && <LayoutBanner />}
-      {isHidden && <FullMenu />}
+      {!isHidden && <LayoutHeader />}
+      {!isHidden && <LayoutNav />}
+      {!(isHidden || isHiddenNew) && <LayoutBanner />}
+      {!(isHidden || isHiddenNew) && <FullMenu />}
       <LayoutMain>{props.children}</LayoutMain>
-      {isHidden && <LayoutFooter />}
+      {!isHidden && <LayoutFooter />}
     </>
   );
 }

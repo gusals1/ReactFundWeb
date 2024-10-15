@@ -58,11 +58,28 @@ export const HeaderMenu = styled.ul`
 export const HeaderNav = styled(Link)`
   color: #4c4c4d;
   cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 5px 18px;
+  border-radius: 5px;
+
+  :hover {
+    background: #85dfff;
+    border: 1px solid #85dfff;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
   &:last-child {
     background: #85dfff;
-    padding: 8px 6px;
+    padding: 6px 8px;
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
+    border: none;
+    :hover {
+      background: #fff;
+      color: #85dfff;
+      transition: all 0.5s ease;
+    }
   }
 `;
