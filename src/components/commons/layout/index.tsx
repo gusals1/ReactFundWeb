@@ -5,6 +5,7 @@ import LayoutNav from "./NavMenu/LayoutNav.index";
 import LayoutBanner from "./Banner/LayoutBanner.index";
 import FullMenu from "./FullMenu/fullMenu.index";
 import LayoutFooter from "./Footer/LayoutFooter.index";
+import LayoutFooterOmit from "./Footer/LayoutFooter.omit";
 
 interface ILayoutProps {
   children: JSX.Element;
@@ -30,11 +31,11 @@ export default function Layout(props: ILayoutProps): JSX.Element {
   return (
     <>
       {!isHidden && <LayoutHeader />}
-      {!isHidden && <LayoutNav />}
+      {!(isHidden || isHiddenNew) && <LayoutNav />}
       {!(isHidden || isHiddenNew) && <LayoutBanner />}
       {!(isHidden || isHiddenNew) && <FullMenu />}
       <LayoutMain>{props.children}</LayoutMain>
-      {!isHidden && <LayoutFooter />}
+      {!isHidden && (isHiddenNew ? <LayoutFooterOmit /> : <LayoutFooter />)}
     </>
   );
 }

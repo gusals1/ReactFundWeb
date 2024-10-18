@@ -1,3 +1,4 @@
+import useMoveToPage from "../../hooks/customs/useMoveToPage";
 import * as S from "./LayoutNav.style";
 import { useState } from "react";
 
@@ -9,13 +10,15 @@ export default function LayoutNav() {
 
   const dropDown = () => {
     setDropDownState((prev) => !prev);
-    console.log(dropDownState);
+
     setImageSrc(dropDownState ? toggleImage[0] : toggleImage[1]);
   };
 
+  const { moveToPage } = useMoveToPage();
+
   return (
     <S.Wrapper>
-      <S.LogoWrap>
+      <S.LogoWrap onClick={moveToPage("connectorMain")}>
         <S.StyledImage
           src={"/mainlogo.png"}
           alt="mainlogo"

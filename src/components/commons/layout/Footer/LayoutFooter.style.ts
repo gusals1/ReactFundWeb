@@ -79,3 +79,11 @@ export const IconWrap = styled.div`
   gap: 30px;
   cursor: pointer;
 `;
+
+export const OmitWrap = styled.div`
+  width: 100%;
+  border-top: 1px solid #ccc;
+`;
+export const OmitText = styled.p`
+  color: #4c4c4d;
+`;
